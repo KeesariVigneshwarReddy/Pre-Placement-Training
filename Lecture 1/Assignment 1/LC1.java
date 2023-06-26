@@ -1,4 +1,4 @@
-/* Assignment Q1
+/* Assignment 1 Q1
    Leet code 1 */
 class Solution
 {

@@ -1,4 +1,4 @@
-/* Assignment Q4
+/* Assignment 1 Q4
    Leet code 66 */
 class Solution 
 {

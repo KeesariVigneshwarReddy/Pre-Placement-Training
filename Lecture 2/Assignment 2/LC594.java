@@ -1,9 +1,10 @@
-/* Assignment Q6
-   Leet code 217 */
+/* Assignment 2 Q3
+   Leet code 594 */
 class Solution 
 {
-    public boolean containsDuplicate(int[] nums) 
+    public int findLHS(int[] nums) 
     {
+        int max = 0;
         HashMap<Integer, Integer> HM = new HashMap<>();
         for (int i = 0; i < nums.length; i++)
         {
@@ -11,11 +12,11 @@ class Solution
         }
         for (Integer key : HM.keySet())
         {
-            if (HM.get(key) > 1)
+            if (HM.containsKey(key + 1))
             {
-                return true;
+                max = Math.max(max, HM.get(key) + HM.get(key + 1));
             }
         }
-        return false;
+        return max;
     }
 }

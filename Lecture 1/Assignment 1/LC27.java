@@ -1,4 +1,4 @@
-/* Assignment Q2 
+/* Assignment 1 Q2 
    Leet code 27  */
 class Solution 
 {
